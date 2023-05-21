@@ -1,3 +1,5 @@
+import './App.css'
+
 function App() {
   return (
     <div className="calc-grid">
@@ -5,7 +7,7 @@ function App() {
         <div className='previous'></div>
         <div className='current'></div>
       </div>
-      <button className='span-two'>AC</button>
+      <button className='big-button'>AC</button>
       <button>DEL</button>
       <button>÷</button>
       <button>1</button>
@@ -22,7 +24,7 @@ function App() {
       <button>−</button>
       <button>.</button>
       <button>0</button>
-      <button>=</button>
+      <button className='big-button'>=</button>
     </div>
   );
 }

@@ -2,10 +2,10 @@ import './App.css'
 
 function App() {
   return (
-    <div className="calc-grid">
+    <div className="calc">
       <div className='output'>
-        <div className='previous'></div>
-        <div className='current'></div>
+        <div className='previous'>123, 234</div>
+        <div className='current'>123, 234</div>
       </div>
       <button className='big-button'>AC</button>
       <button>DEL</button>

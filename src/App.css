@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 html {
     height: 100%;
 }
@@ -10,13 +13,27 @@ body {
     margin: 0;
     background: #0C2E59;
     background: linear-gradient(225deg, #0C2E59, #19184C);
+    font-family: 'Open Sans', sans-serif;
 }
 
-.calc-grid {
+.calc {
     display: grid;
     margin-top: 2rem;
     grid-template-columns: repeat(4, 6rem);
     grid-template-rows: minmax(7rem, auto) repeat(5, 6rem); 
+    justify-content: center;
+}
+
+.calc > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid azure;
+    outline: none;
+    background-color: rgb(211, 211, 211, 0.60);
+}
+
+.calc > button:hover, .calc > button:focus  {
+    background-color: azure;
 }
 
 .big-button {
@@ -27,4 +44,21 @@ body {
     grid-column: 1 / -1;
     background-color: rgb(0, 0, 0, 0.60);
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.output .previous {
+    color:lightgray;
+    font-size: 1.5rem;
+}
+
+.output .current {
+    color: azure;
+    font-size: 2.5rem;
 }

@@ -1,8 +1,30 @@
+html {
+    height: 100%;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    background: #0C2E59;
+    background: linear-gradient(225deg, #0C2E59, #19184C);
+}
+
+.calc-grid {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem); 
+}
+
+.big-button {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(0, 0, 0, 0.60);
+    display: flex;
 }
